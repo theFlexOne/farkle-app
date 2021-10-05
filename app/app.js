@@ -1,3 +1,4 @@
+
 const appInit = () => {
   const dieImages = Array.from(document.querySelectorAll("#diceWrapper label img"));
   const dieCheckboxes = Array.from(document.querySelectorAll("#diceWrapper input"));

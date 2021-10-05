@@ -1,0 +1,59 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: hsl(197, 29%, 35%);
+    --color-primary-darker: hsl(197, 29%, 20%);
+  --color-second: rgb(24, 82, 38);
+  --color-third: rgb(20, 26, 29);
+
+
+}
+
+body {
+  background-color: var(--color-second);
+}
+
+header, .game-wrapper {
+  margin: 8px;
+  border: 2px solid var(--color-third);
+  background-color: var(--color-primary-darker);
+  border-radius: 8px;
+}
+
+header {
+  display: flex;
+  min-height: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  background-color: var(--color-primary);
+  display: inline;
+  border: 2px solid var(--color-third);
+  border-radius: 8px;
+}
+
+.game-wrapper {
+
+}
+
+.dice-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 2px solid var(--color-third);
+  background-color: var(--color-primary);
+  margin: 15px;
+}
+
+.dice-wrapper img {
+  background-color: rgb(2, 71, 25);
+  border: 2px solid black;
+}
