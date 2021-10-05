@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="new-styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>It's FARKLE!!!</h1>
+
+  <form id="diceWrapper" class="dice dice-wrapper">
+    <label for="d1" name="dice"
+      ><img data-die-status="free" src=".\images\1f.png" alt="Die #1" title="Die #1" width="125"/>
+      <input type="checkbox" class="dice-die" id="d1" name="d1"/>
+    </label>
+
+    <label for="d2" name="dice"
+      ><img data-die-status="free" src=".\images\2f.png" alt="Die #2" title="Die #2" width="125"/>
+      <input type="checkbox" class="dice-die" id="d2" name="d2"/>
+    </label>
+
+    <label for="d3" name="dice"
+      ><img data-die-status="free" src=".\images\3f.png" alt="Die #3" title="Die #3" width="125"/>
+      <input type="checkbox" class="dice-die" id="d3" name="d3"/>
+    </label>
+
+    <label for="d4" name="dice"
+      ><img data-die-status="free" src=".\images\4f.png" alt="Die #4" title="Die #4" width="125"/>
+      <input type="checkbox" class="dice-die" id="d4" name="d4"/>
+    </label>
+
+    <label for="d5" name="dice"
+      ><img data-die-status="free" src=".\images\5f.png" alt="Die #5" title="Die #5" width="125"/>
+      <input type="checkbox" class="dice-die" id="d5" name="d5"/>
+    </label>
+
+    <label for="d6" name="dice"
+      ><img data-die-status="free" src=".\images\6f.png" alt="Die #6" title="Die #6" width="125"/>
+      <input type="checkbox" class="dice-die" id="d6" name="d6"/>
+    </label>
+
+    <br>
+    <button class="roll-dice-button" style="border-radius: 20%" id="rollDiceButton" type="button">ROLL!!!</button>
+  </form>
+
+
+  <script src="./app.js"></script>
+
+  <script>import { initializeApp } from "firebase/app";</script>
+  <script>import { initializeApp } from "firebase/firestore";</script>
+  <script>// Import the functions you need from the SDKs you need
+    import { getAnalytics } from "firebase/analytics";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+    
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBR6ZqhUBgb3qHQ_29_qHzqNhgGiq5SfgM",
+      authDomain: "farkle-3039b.firebaseapp.com",
+      projectId: "farkle-3039b",
+      storageBucket: "farkle-3039b.appspot.com",
+      messagingSenderId: "225738247563",
+      appId: "1:225738247563:web:f62483b4f4c0ab8c79338e",
+      measurementId: "G-3G91447YYS"
+    };
+    
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapshots: true});
+  </script>
+  <!--! scripts below are completely separate from the functionality of this project -->
+  
+
+</body>
+</html>
