@@ -1,5 +1,5 @@
 
 # Local Netlify folder
 .netlify
-.js
-.old-farkle
+/js
+/old-farkle
