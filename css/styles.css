@@ -49,11 +49,18 @@ header h1 {
   align-items: center;
   flex-wrap: wrap;
   border: 2px solid var(--color-third);
+  border-radius: 8px;
   background-color: var(--color-primary);
   margin: 15px;
+  padding: 1rem 0;
 }
 
-.dice-wrapper img {
-  background-color: rgb(2, 71, 25);
-  border: 2px solid black;
+
+.dice-wrapper label {
+  border-radius: 8px;
+  background-color: lawngreen;
+}
+
+.dice-wrapper label.held {
+  background-color: rgb(196, 35, 23);
 }

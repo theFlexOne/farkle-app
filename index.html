@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
   <title>Document</title>
 </head>
+
 <body>
   <header>
     <h1>It's FARKLE!!!</h1>
   </header>
   <div class="game-wrapper" id="gameWrapper">
-    <form id="diceWrapper" class="dice dice-wrapper">
-      <label for="d1" name="dice"
-        ><img data-die-status="free" src="./images/black-transparent-dice/die1.png" alt="Die #1" title="Die #1" width="125"/>
+    <form class="dice dice-wrapper" id="diceWrapper">
+      <label for="d1" name="dice">
         <input type="checkbox" id="d1" name="d1" hidden/>
+        <img data-die-status="free" src="./images/black-transparent-dice/die1.png" alt="Die #1" title="Die #1"/>
       </label>
 
-      <label for="d2" name="dice"
-        ><img data-die-status="free" src="./images/black-transparent-dice/die2.png" alt="Die #2" title="Die #2" width="125"/>
+      <label for="d2" name="dice">
         <input type="checkbox" id="d2" name="d2" hidden/>
+        <img data-die-status="free" src="./images/black-transparent-dice/die2.png" alt="Die #2" title="Die #2"/>
       </label>
 
-      <label for="d3" name="dice"
-        ><img data-die-status="free" src="./images/black-transparent-dice/die3.png" alt="Die #3" title="Die #3" width="125"/>
+      <label for="d3" name="dice">
         <input type="checkbox" id="d3" name="d3" hidden/>
+        <img data-die-status="free" src="./images/black-transparent-dice/die3.png"  alt="Die #3" title="Die #3"/>
       </label>
 
-      <label for="d4" name="dice"
-        ><img data-die-status="free" src="./images/black-transparent-dice/die4.png" alt="Die #4" title="Die #4" width="125"/>
+      <label for="d4" name="dice">
         <input type="checkbox" id="d4" name="d4" hidden/>
+        <img data-die-status="free" src="./images/black-transparent-dice/die4.png" alt="Die #4" title="Die #4"/>
       </label>
 
-      <label for="d5" name="dice"
-        ><img data-die-status="free" src="./images/black-transparent-dice/die5.png" alt="Die #5" title="Die #5" width="125"/>
+      <label for="d5" name="dice">
         <input type="checkbox" id="d5" name="d5" hidden/>
+        <img data-die-status="free" src="./images/black-transparent-dice/die5.png" alt="Die #5" title="Die #5"/>
       </label>
 
-      <label for="d6" name="dice"
-        ><img data-die-status="free" src="./images/black-transparent-dice/die6.png" alt="Die #6" title="Die #6" width="125"/>
+      <label for="d6" name="dice">
         <input type="checkbox" id="d6" name="d6" hidden/>
+        <img data-die-status="free" src="./images/black-transparent-dice/die6.png" alt="Die #6" title="Die #6"/>
       </label>
 
-      <br>
     </form>
-    <button class="roll-dice-button" style="border-radius: 20%" id="rollDiceButton" type="button">ROLL!!!</button>
+    <br />
+    <button type="button" id="rollButton" class="roll-button" style="border-radius: 20%">
+      ROLL!
+    </button>
   </div>
 
   <script src="./app/app.js" type="module"></script>
-  <script src="./app/newGame.js"></script>
-
+  <script src="./app/main.js" type="module"></script>
+  <!-- <script src="./app/newGame.js" type="javascript"></script> -->
 
   <!-- 
   <script>import { initializeApp } from "firebase/app";</script>
@@ -79,7 +83,6 @@
     db.settings({ timestampsInSnapshots: true});
   </script> -->
   <!--! scripts below are completely separate from the functionality of this project -->
-  
-
 </body>
+
 </html>
